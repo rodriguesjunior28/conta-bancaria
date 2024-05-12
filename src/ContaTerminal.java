@@ -15,22 +15,22 @@ public class ContaTerminal {
        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
        System.out.println("Digite seu nome: ");
-       String nome = scanner.next();
+       String nome = scanner.nextLine();
 
        System.out.println("Digite seu sobrenome: ");
-       String sobrenome = scanner.next();
+       String sobrenome = scanner.nextLine();
 
        System.out.println("Digite sua data, mês e ano de nascimento: ");
        String nascimento = scanner.next();
 
        System.out.println("Digite seu cpf: ");
-       double cpf = scanner.nextDouble();
+       int cpf = scanner.nextInt();
+
+       System.out.println("Digite seu cep: ");
+       long cep = scanner.nextLong();
 
        System.out.println("Digite seu endereço: ");
        String endereco = scanner.next();
-
-       System.out.println("Digite seu cep: ");
-       double cep = scanner.nextDouble();
 
        System.out.println("Seja bem vindo(a) " + nome + " " + sobrenome + ", Conta criada com sucesso!");
     }
